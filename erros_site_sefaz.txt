@@ -1,0 +1,15 @@
+=:=:=:=:=:= ERROS DO SITE DA SEFAZ =:=:=:=:=:=
+Link para referência: https://nfa.sefaz.al.gov.br
+
+- Ao acessar o site, vemos uma tela de espera pouco intuitiva e mal elaborada, como:
+  • A div #global e a table abaixo poderiam ter fundos diferentes, ou nesta página serem um único elemento, já que a célula table>tbody>tr.titulo_pagina que ocupa o lado esquerdo da tabela não está visível;
+  • Além disso, a table poderia ser facilmente substituída por uma div, tendo como filhos duas divs contendo texto, espaçados através da propriedade CSS justify-content;
+  • A div #footer não corresponde à resoluções modernas como Full HD;
+  • Tomando resoluções como 375x812 e 412x915 (Iphone 11 Pro & Galaxy Note 20, respectivamente) como base, o site fica em resolução indesejável para usuários mobile, sendo exibido na perspectiva de um computador.
+
+- O site requisita abrir um pop-up, que é automaticamente bloqueado em navegadores modernos como Mozilla Firefox e Google Chrome, possibilitando confusão para usuários desatentos e/ou suspeitas de site não confiável.
+
+- Quando permitimos o acesso ao pop-up, é possível perceber:
+  • Mesmos erros da página inicial;
+  • A tabela table.formLogin - que poderia ser um formulário ou div - possui uma fonte muito pequena (10px), dificultando mais uma vez a visibilidade para usuários em dispositivos mobiles, ou com baixa visão.
+  • Ao não preencher corretamente os inputs, os erros são apresentados como pop-up do navegador, podendo ser exibido como mensagens abaixo de cada input.
