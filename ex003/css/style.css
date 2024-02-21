@@ -1,0 +1,52 @@
+/* Variables: */
+:root {
+    --orange: #EB6440;
+    --black: #1E1E1E;
+    --azure: #EFF5F5;
+}
+
+/* Global Settings: */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Header Properties: */
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--orange);
+}
+.header img {
+    width: 80px;
+    scale: -1;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style-type: none;
+}
+.navigation li a {
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Main (area) Properties: */
